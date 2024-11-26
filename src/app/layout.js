@@ -12,8 +12,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const dynamic = 'force-dynamic';
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

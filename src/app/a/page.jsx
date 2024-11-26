@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import styles from './page.module.css';
+import { query } from '../query';
 
-export default function Home() {
+export default async function A() {
+  const data = await query();
   return (
-    <div className={styles.page}>
-      <Link prefetch={false} href='/a'>A</Link>
+    <div>
+      <div>{data} A</div>
       <Link prefetch={false} href='/b'>B</Link>
       <Link prefetch={false} href='/c'>C</Link>
     </div>
